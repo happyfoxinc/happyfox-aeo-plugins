@@ -1,0 +1,20 @@
+{
+    "name": "happyfox-aeo-plugin",
+    "interface": {
+        "displayName": "HappyFox AEO Plugin"
+    },
+    "plugins": [
+        {
+            "name": "happyfox-aeo",
+            "source": {
+                "source": "local",
+                "path": "./plugins/happyfox-aeo"
+            },
+            "policy": {
+                "installation": "AVAILABLE",
+                "authentication": "ON_INSTALL"
+            },
+            "category": "Data & Analytics"
+        }
+    ]
+}

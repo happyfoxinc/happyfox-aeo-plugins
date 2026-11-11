@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "happyfox-aeo": {
+      "type": "http",
+      "url": "https://aeo.happyfox.com/mcp"
+    }
+  }
+}

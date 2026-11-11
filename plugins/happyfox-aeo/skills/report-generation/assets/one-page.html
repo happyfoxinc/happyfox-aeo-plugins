@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+<!-- Fictional visual reference for report_type: one_page. Follow one-page.md; replace every illustrative fact with verified evidence. -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar Desk · AI visibility brief · Illustrative sample</title>
+
+<style>
+/* Use locally available Inter with a system sans-serif fallback. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.preview-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink2);
+  font-size: 12px;
+}
+
+.preview-bar span {
+  display: block;
+}
+
+.preview-bar strong {
+  color: var(--ink);
+}
+
+button {
+  flex-shrink: 0;
+  border: 1px solid var(--bd-3);
+  border-radius: 6px;
+  padding: 9px 14px;
+  background: var(--s-main);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.report {
+  width: 816px;
+  min-height: 1056px;
+  margin: 0 auto 32px;
+  background: var(--s-main);
+}
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--bd-2);
+}
+
+.brand span {
+  display: block;
+  margin-top: 3px;
+  color: var(--ink2);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.publisher {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -.8px;
+}
+
+.publisher .aeo {
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.publisher small {
+  display: block;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink2);
+}
+
+.eyebrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink2);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.sample {
+  color: var(--ink);
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 em {
+  font-style: normal;
+}
+
+.dek {
+  margin: 10px 0 0;
+  max-width: 640px;
+  color: var(--ink2);
+}
+
+.scope {
+  border-top: 1px solid var(--bd-2);
+  border-bottom: 1px solid var(--bd-2);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  color: var(--ink2);
+}
+
+.scope b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.metric-label {
+  margin: 0 0 4px;
+}
+
+.metric-value {
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-detail {
+  margin: 5px 0 0;
+  color: var(--ink2);
+}
+
+.recognition {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0;
+  padding: 0 1px;
+  color: var(--ink2);
+}
+
+.recognition strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.section-number {
+  margin-right: 8px;
+  font: 10px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: .7px;
+}
+
+.section-note {
+  margin: 0;
+  color: var(--ink2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+th {
+  text-align: left;
+  color: var(--ink2);
+  text-transform: uppercase;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--bd-2);
+  vertical-align: bottom;
+}
+
+th:nth-child(1) {
+  width: 36%;
+}
+
+th:nth-child(2) {
+  width: 27%;
+}
+
+th:nth-child(3) {
+  width: 37%;
+  padding-left: 18px;
+}
+
+td {
+  border-bottom: 1px solid var(--bd-2);
+  vertical-align: middle;
+}
+
+td:nth-child(3) {
+  padding-left: 18px;
+}
+
+.segment {
+  display: block;
+}
+
+.segment-note {
+  display: block;
+  color: var(--ink2);
+  font-size: 10px;
+  margin-top: 1px;
+}
+
+.bar-line {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.track {
+  height: 5px;
+  flex: 1;
+}
+
+.fill {
+  height: 100%;
+  background: var(--green);
+}
+
+.bar-value {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.competitor {
+  font-weight: 500;
+}
+
+td small {
+  display: block;
+  color: var(--ink2);
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.table-foot {
+  margin: 7px 0 0;
+  color: var(--ink2);
+}
+
+.evidence {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  border-left: 3px solid var(--ink);
+}
+
+blockquote {
+  margin: 0;
+}
+
+.evidence-label {
+  margin: 0 0 5px;
+  color: var(--ink2);
+  text-transform: uppercase;
+}
+
+.outcome {
+  margin: 0;
+}
+
+.outcome strong {
+  font-weight: 600;
+}
+
+.engine-row {
+  margin: 7px 0 0;
+  color: var(--ink2);
+}
+
+.next-step {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 18px;
+}
+
+.next-step .label {
+  color: var(--emphasis-muted);
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.next-step p {
+  margin: 6px 0 0;
+  line-height: 1.5;
+  color: var(--emphasis-muted);
+}
+
+.invitation {
+  border-left: 1px solid var(--emphasis-line);
+}
+
+.invitation strong {
+  display: block;
+  font-weight: 600;
+}
+
+.method {
+  margin: 10px 0 0;
+  font-size: 9px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--bd-2);
+  margin-top: 9px;
+  padding-top: 9px;
+  color: var(--ink2);
+  font-size: 9px;
+}
+
+@media screen and (max-width: 590px) {
+  .recognition span {
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+@page {
+  size: Letter portrait;
+  margin: 0;
+}
+
+@media print {
+  .preview-bar {
+    display: none;
+  }
+  .report {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0;
+    box-shadow: none;
+  }
+  section, .metrics, .next-step {
+    break-inside: avoid;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .preview-bar {
+    margin: 16px;
+  }
+  .report {
+    width: calc(100% - 28px);
+    padding: 30px;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .report {
+    padding: 24px 20px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  .brand {
+    font-size: 16px;
+  }
+  .publisher {
+    font-size: 17px;
+  }
+  .eyebrow {
+    flex-wrap: wrap;
+  }
+  .metrics {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .metric {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0 12px;
+  }
+  .metric-value {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    font-size: 31px;
+  }
+  .metric-detail {
+    margin: 0;
+  }
+  .recognition {
+    display: block;
+  }
+  .section-heading {
+    display: block;
+  }
+  .section-note {
+    margin-top: 5px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  th {
+    font-size: 8px;
+    letter-spacing: .2px;
+  }
+  td {
+    font-size: 10px;
+  }
+  th:nth-child(1) {
+    width: 33%;
+  }
+  th:nth-child(2) {
+    width: 30%;
+  }
+  th:nth-child(3) {
+    width: 37%;
+    padding-left: 12px;
+  }
+  td:nth-child(3) {
+    padding-left: 12px;
+  }
+  .bar-line {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .bar-value {
+    width: 100%;
+  }
+  .track {
+    flex-basis: 100%;
+    max-width: 75px;
+  }
+  .evidence, .next-step {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .invitation {
+    border-left: 0;
+    border-top: 1px solid var(--emphasis-line);
+    padding: 12px 0 0;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
+
+:root {
+  --s-page: #edeae5;
+  --s-main: #ffffff;
+  --s-raised: #faf9f5;
+  --s-hover: #f0eee9;
+  --s-hover2: #e9e6e1;
+  --s-active: #eae7e1;
+  --ink: #1f1e1d;
+  --ink-prose: #3a3937;
+  --ink2: #666666;
+  --ink3: #999999;
+  --ink4: #bbbbbb;
+  --bd-1: rgba(31, 30, 29, 0.07);
+  --bd-2: rgba(31, 30, 29, 0.1);
+  --bd-3: rgba(31, 30, 29, 0.14);
+  --bd-4: rgba(31, 30, 29, 0.22);
+  --btn-bg: #1f1e1d;
+  --btn-fg: #ffffff;
+  --ok: #10b981;
+  --danger: #ef4444;
+  --rec: #ff5f57;
+  --hdr: rgba(237, 234, 229, 0.86);
+  --accent: #1f1e1d;
+  --nav-active: var(--s-main);
+  --logo-i: 0;
+  --shadow-sm: 0 1px 2px rgba(31, 30, 29, 0.06);
+  --shadow-md: 0 4px 12px rgba(31, 30, 29, 0.07);
+  --shadow-xl: 0 24px 48px rgba(31, 30, 29, 0.12);
+  color-scheme: light;
+}
+
+:root {
+  --green: #047857;
+  --risk: #b42318;
+  --signal-bg: #fcece9;
+  --positive-bg: #e9f5ef;
+  --emphasis-bg: #1f1e1d;
+  --emphasis-ink: #ffffff;
+  --emphasis-muted: #d2d0cd;
+  --emphasis-line: #ffffff28;
+  --sans: Inter,system-ui,sans-serif;
+  --blue: #a06e51;
+  --violet: #6e7d55;
+}
+
+body {
+  background: var(--s-page);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+h1,h2,h3,blockquote,.quote,.ordinal {
+  font-family: var(--sans);
+  font-weight: 500;
+}
+
+h1 {
+  line-height: 1.13;
+}
+
+h2,h3 {
+  letter-spacing: -.025em;
+}
+
+button,select {
+  border: 1px solid var(--bd-3);
+  border-radius: 8px;
+  background: var(--s-main);
+  color: var(--ink);
+  font: 500 12px var(--sans);
+  min-height: 30px;
+  padding: 6px 10px;
+}
+
+button:hover,select:hover {
+  background: var(--s-hover);
+}
+
+button:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.sample,.sampleflag {
+  color: var(--ink2);
+}
+
+.preview-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hf-publisher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink);
+  font: 600 16px var(--sans);
+  letter-spacing: -.04em;
+}
+
+.hf-publisher svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+}
+
+.hf-publisher .aeo {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--ink2);
+  margin: 0;
+  padding-left: 7px;
+  border-left: 1px solid var(--bd-3);
+}
+
+.track {
+  background: var(--s-hover2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.fill,.fill.own {
+  background: var(--ink);
+  border-radius: 99px;
+}
+
+.fill:not(.own) {
+  background: var(--ink3);
+}
+
+.swatch {
+  background: var(--ink3);
+}
+
+.swatch.own {
+  background: var(--ink);
+}
+
+.swatch.neutral {
+  background: var(--s-hover2);
+}
+
+.zero {
+  color: var(--risk);
+}
+
+.gain {
+  color: var(--green);
+}
+
+@media print {
+  :root {
+    --s-page: #fff;
+    --s-main: #fff;
+    --s-raised: #faf9f5;
+    --s-hover: #f0eee9;
+    --s-hover2: #e9e6e1;
+    --ink: #1f1e1d;
+    --ink-prose: #3a3937;
+    --ink2: #666;
+    --ink3: #999;
+    --bd-1: #1f1e1d12;
+    --bd-2: #1f1e1d1a;
+    --bd-3: #1f1e1d24;
+    --green: #047857;
+    --risk: #b42318;
+    --signal-bg: #fcece9;
+    --positive-bg: #e9f5ef;
+    --emphasis-bg: #1f1e1d;
+    --emphasis-ink: #fff;
+    --emphasis-muted: #d2d0cd;
+    --emphasis-line: #ffffff28;
+    color-scheme: light;
+  }
+  body {
+    background: #fff;
+  }
+}
+
+.preview-bar {
+  max-width: 880px;
+  padding: 0 4px;
+  flex-wrap: wrap;
+  margin: 22px auto 18px;
+  font: 12px/1.5 var(--sans);
+}
+
+.preview-bar strong {
+  font-weight: 500;
+}
+
+.report {
+  padding: 28px 36px 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #00000006;
+}
+
+.masthead {
+  padding-bottom: 13px;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -.035em;
+}
+
+.brand span {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.publisher small {
+  font-size: 9px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+h1 {
+  font: 500 34px/1.12 var(--sans);
+  letter-spacing: -.045em;
+  max-width: 740px;
+}
+
+h1 em {
+  color: var(--ink2);
+}
+
+.eyebrow {
+  margin: 14px 0 10px;
+  font-weight: 500;
+  font-size: 9px;
+}
+
+.dek {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.scope {
+  font-size: 9px;
+  padding: 8px 0;
+  margin: 9px 0 12px;
+  column-gap: 12px;
+}
+
+.metrics {
+  gap: 10px;
+}
+
+.metric {
+  border: 1px solid var(--bd-2);
+  border-radius: 12px;
+  padding: 13px 13px 12px;
+  background: var(--s-raised);
+}
+
+.metric-label {
+  font-size: 9px;
+  color: var(--ink2);
+  font-weight: 500;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.metric-value {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -.04em;
+}
+
+.metric-detail {
+  font-size: 9px;
+  line-height: 1.5;
+  margin-top: 7px;
+}
+
+.recognition {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 11px;
+}
+
+h2 {
+  font: 500 18px/1.25 var(--sans);
+  letter-spacing: -.025em;
+}
+
+.section-number {
+  color: var(--ink3);
+}
+
+.section-note {
+  font-size: 9px;
+}
+
+th {
+  font-size: 9px;
+  letter-spacing: .08em;
+  font-weight: 500;
+}
+
+td {
+  padding: 9px 0;
+  font-size: 10px;
+}
+
+.segment {
+  font-weight: 500;
+}
+
+.segment-note,td small {
+  font-size: 9px;
+}
+
+.bar-value {
+  font-size: 10px;
+  min-width: 83px;
+}
+
+.table-foot {
+  font-size: 8.5px;
+  line-height: 1.45;
+}
+
+.evidence {
+  background: var(--s-raised);
+  border: 1px solid var(--bd-2);
+  border-radius: 12px;
+  padding: 13px 14px;
+  gap: 18px;
+}
+
+.evidence-label {
+  font-size: 8px;
+  letter-spacing: .09em;
+}
+
+blockquote {
+  font: 500 14px/1.45 var(--sans);
+  letter-spacing: -.015em;
+}
+
+.outcome {
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.engine-row {
+  font-size: 8px;
+}
+
+.next-step {
+  border-radius: 12px;
+  padding: 15px 17px;
+  background: var(--emphasis-bg);
+  color: var(--emphasis-ink);
+}
+
+.next-step h2 {
+  color: var(--emphasis-ink);
+  font-size: 17px;
+}
+
+.next-step .label,.next-step p {
+  color: var(--emphasis-muted);
+}
+
+.next-step p {
+  font-size: 9px;
+}
+
+.next-step .label {
+  font-size: 8px;
+}
+
+.invitation {
+  border-color: var(--emphasis-line);
+  padding-left: 17px;
+}
+
+.invitation strong {
+  font-size: 11px;
+}
+
+.method,footer {
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+@media screen and (max-width:590px) {
+  h1 {
+    font-size: 29px;
+  }
+  .preview-bar {
+    margin: 16px;
+  }
+  .report {
+    padding: 24px 20px;
+  }
+  .metric-label {
+    margin-bottom: 4px;
+  }
+  .evidence,.next-step {
+    gap: 13px;
+  }
+  .invitation {
+    border-top-color: var(--emphasis-line);
+    padding-left: 0;
+  }
+}
+
+@media print {
+  .report {
+    border-radius: 0;
+    padding: 28px 36px 18px;
+  }
+}
+
+.bar-line .fill {
+  background: var(--ink);
+}
+
+td {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+section {
+  margin-top: 12px;
+}
+
+.next-step {
+  margin-top: 12px;
+}
+
+.section-heading {
+  margin-bottom: 8px;
+}
+
+/* HappyFox palette + spacing refinement */
+:root{--ink:#0a0a0a;--ink-prose:#3f3f3f;--ink2:#5c5c5c;--ink3:#a3a3a3;--bd-1:#efefed;--bd-2:#e7e7e5;--bd-3:#d9d9d6;--s-raised:#f8f8f7;--s-hover2:#ececea;--emphasis-bg:#0a0a0a;--hf-orange:#ff5a00;--hf-orange-dark:#c74600;--hf-orange-tint:#fff1e8;}
+@media print{:root{--ink:#0a0a0a;--ink2:#5c5c5c;--bd-2:#e7e7e5;--s-raised:#f8f8f7;--emphasis-bg:#0a0a0a;}}
+body{-webkit-font-smoothing:antialiased;}
+a:hover{color:var(--hf-orange);}
+.hf-publisher{gap:10px;color:var(--ink);}
+.hf-publisher svg.hf-wordmark{width:auto;height:20px;margin:0;display:block;}
+.hf-publisher .aeo{font-size:11px;padding-left:10px;color:var(--ink2);}
+
+.preview-bar{margin:28px auto 20px;}
+.report{padding:30px 40px 18px;}
+.masthead{padding-bottom:12px;align-items:flex-end;}
+.publisher{display:flex;flex-direction:column;align-items:flex-end;}
+.publisher small{font-size:9px;margin-top:6px;}
+.brand span{font-size:9px;margin-top:4px;}
+.eyebrow{margin:16px 0 10px;font-size:9.5px;}
+h1{font-size:31px;line-height:1.1;}
+.dek{font-size:12px;line-height:1.55;margin-top:10px;}
+.scope{font-size:9.5px;padding:7px 0;margin:10px 0 12px;column-gap:16px;}
+.scope span{white-space:nowrap;}
+.metrics{gap:12px;}
+.metric{padding:13px 15px 12px;}
+.metric-label{font-size:9px;margin-bottom:8px;}
+.metric-value{font-size:30px;}
+.metric-detail{font-size:9.5px;line-height:1.45;margin-top:6px;}
+.recognition{font-size:10.5px;margin-top:12px;}
+section{margin-top:16px;}
+.section-heading{margin-bottom:8px;}
+.section-number{color:var(--hf-orange);font-weight:600;margin-right:9px;}
+.section-note{font-size:9.5px;}
+td{font-size:10.5px;padding-top:5px;padding-bottom:5px;}
+.segment-note,td small{font-size:9px;}
+.bar-line{gap:10px;}
+.bar-line .fill{background:var(--hf-orange);}
+.bar-value{font-size:10.5px;min-width:88px;}
+.table-foot{font-size:9px;margin-top:8px;}
+.evidence{padding:14px 18px;gap:22px;}
+.evidence-label{font-size:8.5px;margin-bottom:6px;}
+.outcome{font-size:10px;line-height:1.55;}
+.engine-row{font-size:9px;}
+.next-step{margin-top:16px;padding:14px 18px;gap:22px;}
+.next-step .label{font-size:8.5px;}
+.next-step p{font-size:9px;line-height:1.5;}
+.invitation{padding-left:20px;}
+.invitation strong{font-size:11.5px;color:#ff8a3d;}
+.method{font-size:8.5px;line-height:1.4;margin-top:10px;}
+footer{font-size:8.5px;margin-top:9px;padding-top:9px;}
+@media print{.report{padding:30px 40px 18px;}}
+@media screen and (max-width:590px){.report{padding:26px 20px;}h1{font-size:29px;}.hf-publisher svg.hf-wordmark{height:16px;}.publisher{align-items:flex-start;}}
+</style>
+</head>
+<body>
+  <div class="preview-bar">
+    <div><strong>One-page report reference</strong><span>Fictional brand and illustrative data · US Letter print layout</span></div>
+    <div class="preview-tools"><button type="button" onclick="window.print()">Print / Save PDF</button></div>
+  </div>
+  <main class="report" aria-label="Illustrative AI visibility report for Northstar Desk">
+    <header class="masthead">
+      <div class="brand">Northstar Desk<span>AI visibility brief</span></div>
+      <div class="publisher"><span class="hf-publisher"><svg class="hf-wordmark" viewBox="0 0 2046 389" fill="none" role="img" aria-label="HappyFox"><g clip-path="url(#clip0_9381_2616)"><path fill="currentColor" d="m1990.08 305.059-57.58-84.695-8.34-7.509-77.61-108.059h55.49l51.32 74.264 7.93 7.093 83.86 118.906zm-147.28 0 80.94-112.231 26.7 32.96-54.24 79.271zm122.66-93.039-27.12-32.543 50.07-74.681h52.98zM1748.81 309.235c-19.47 0-37.14-4.59-52.99-13.768-15.86-9.457-28.51-22.113-37.97-37.967q-13.77-23.78-13.77-52.987 0-29.205 13.77-52.569c9.46-15.576 22.11-27.953 37.97-37.132 15.85-9.457 33.52-14.185 52.99-14.185q29.61 0 53.4 13.768c15.85 9.179 28.37 21.695 37.55 37.549 9.46 15.576 14.18 33.099 14.18 52.569s-4.72 37.133-14.18 52.987c-9.18 15.854-21.7 28.51-37.55 37.967q-23.79 13.768-53.4 13.768m0-44.225q17.1 0 30.03-7.51c8.91-5.285 15.72-12.517 20.45-21.695 5-9.179 7.51-19.609 7.51-31.292s-2.51-21.973-7.51-30.874c-5.01-8.9-11.82-15.854-20.45-20.86q-12.93-7.927-30.03-7.927c-11.13 0-21.14 2.642-30.04 7.927-8.63 5.006-15.44 11.96-20.45 20.86-4.73 8.901-7.09 19.192-7.09 30.874 0 11.683 2.36 22.113 7.09 31.292 5.01 9.178 11.82 16.41 20.45 21.695 8.9 5.006 18.91 7.51 30.04 7.51M1545.77 305.062V78.514c0-15.298 3.34-28.788 10.01-40.47 6.96-11.682 16.41-20.861 28.37-27.536 12.24-6.676 26.29-10.014 42.14-10.014q18.36 0 31.29 6.259c8.63 4.172 16.69 10.152 24.2 17.94l-29.62 29.622c-3.34-3.337-6.95-5.98-10.85-7.927-3.89-1.947-8.9-2.92-15.02-2.92-11.12 0-19.75 3.06-25.87 9.178q-8.76 8.762-8.76 25.45v226.966zm9.97-158.542v-41.722h96.42v41.722zM1410.55 307.145l-85.53-202.349h50.49l58.41 148.529h-14.61l61.75-148.529h50.9l-93.04 202.349zm-59.66 81.358 62.17-128.086 25.86 46.728-37.13 81.358zM1233.45 309.235c-15.29 0-28.92-3.199-40.88-9.596-11.96-6.676-21.42-15.715-28.37-27.119q-10.02-17.106-10.02-38.801v-57.576c0-14.464 3.48-27.397 10.43-38.801 6.96-11.404 16.41-20.305 28.38-26.702 11.96-6.676 25.45-10.013 40.46-10.013 18.08 0 34.36 4.728 48.82 14.185 14.74 9.179 26.28 21.695 34.63 37.549q12.93 23.365 12.93 52.987 0 29.205-12.93 52.986c-8.35 15.576-19.89 27.954-34.63 37.133-14.46 9.178-30.74 13.768-48.82 13.768m-7.5-43.391c11.12 0 20.86-2.503 29.2-7.51 8.62-5.284 15.3-12.516 20.03-21.695 5-9.179 7.51-19.748 7.51-31.708s-2.51-22.53-7.51-31.709c-4.73-9.178-11.41-16.271-20.03-21.278-8.34-5.284-18.08-7.927-29.2-7.927-11.13 0-21 2.643-29.63 7.927-8.62 5.007-15.3 12.1-20.02 21.278-4.73 9.179-7.1 19.749-7.1 31.709s2.37 22.529 7.1 31.708c4.72 9.179 11.4 16.411 20.02 21.695 8.63 5.007 18.5 7.51 29.63 7.51m-99.72 122.662V104.799h45.89v53.821l-7.92 48.814 7.92 48.397v132.675zM1010.77 309.235q-22.952 0-40.892-9.596-17.94-10.013-28.37-27.119-10.014-17.106-10.013-38.801v-57.576q0-21.695 10.43-38.801t28.371-26.702q17.939-10.014 40.474-10.013c18.07 0 34.35 4.728 48.81 14.185 14.74 9.179 26.28 21.695 34.63 37.549q12.93 23.365 12.93 52.987 0 29.205-12.93 52.986c-8.35 15.576-19.89 27.954-34.63 37.133-14.46 9.178-30.74 13.768-48.81 13.768m-7.51-43.391c11.12 0 20.86-2.503 29.2-7.51 8.62-5.284 15.3-12.516 20.03-21.695 5-9.179 7.51-19.748 7.51-31.708s-2.51-22.53-7.51-31.709c-4.73-9.178-11.41-16.271-20.03-21.278-8.34-5.284-18.08-7.927-29.2-7.927q-16.694 0-29.627 7.927-12.933 7.51-20.026 21.278-7.093 13.769-7.093 31.709t7.093 31.708q7.092 13.769 20.026 21.695 12.933 7.51 29.627 7.51m-99.719 122.662V104.799h45.894v53.821l-7.927 48.814 7.927 48.397v132.675zM764.695 309.235q-27.119 0-49.231-13.768-21.696-13.769-34.629-37.133-12.517-23.781-12.517-52.986 0-29.622 12.517-52.987 12.933-23.78 34.629-37.549 22.112-14.185 49.231-14.185 22.947 0 40.47 10.013 17.94 9.596 28.371 26.702t10.43 38.801v57.576q0 21.695-10.43 38.801-10.013 17.106-27.954 27.119-17.94 9.596-40.887 9.596m7.51-43.391q25.45 0 40.887-17.106 15.855-17.106 15.854-43.807 0-17.94-7.092-31.709-7.093-13.767-20.027-21.278-12.516-7.926-29.622-7.927-16.689 0-29.622 7.927-12.517 7.51-20.027 21.278-7.092 13.769-7.092 31.709t7.092 31.708q7.51 13.769 20.027 21.695 12.933 7.51 29.622 7.51m53.821 39.219v-53.821l7.927-48.815-7.927-48.397v-49.231h45.894v200.264zM607.629 305.059V189.49q0-20.027-12.933-32.96-12.517-12.934-32.543-12.934-13.351 0-23.782 5.841T522.1 165.709q-5.841 10.43-5.841 23.781l-17.94-10.013q0-22.947 10.013-40.47 10.013-17.94 27.536-27.954 17.94-10.43 40.053-10.43 22.53 0 40.053 10.013t27.536 27.954q10.013 17.523 10.013 40.887v125.582zm-137.264 0V4.663h45.894V305.06z"></path><g fill="#ff5a00" clip-path="url(#clip1_9381_2616)"><path d="M50.236 157.311a41.35 41.35 0 0 0 22.232-6.472l80.282-50.936-112.74-82.16C23.36 5.59-.008 17.498-.008 38.05v86.259l20.948 20.849c7.855 7.806 18.23 12.104 29.346 12.104z"></path><path d="m8.786 238.662 115.359 99.056 39.128 33.595c9.14 7.855 22.528 8.102 31.965.642l164.318-129.587c6.027-4.793 9.585-12.055 9.585-19.762V36.253c0-20.206-22.677-32.211-39.376-20.8L178.49 118.71l-90.163 57.21c-11.709 7.46-24.95 11.066-38.09 11.066-18.33 0-36.51-7.064-50.245-20.749v53.356c0 7.361 3.211 14.327 8.794 19.07"></path></g></g><defs><clipPath id="clip0_9381_2616"><path fill="#fff" d="M0 0h2045.14v389H0z"></path></clipPath><clipPath id="clip1_9381_2616"><path fill="#fff" d="M-.008 11.031H369.14v366.332H-.008z"></path></clipPath></defs></svg><span class="aeo">AEO</span></span><small>The 60-second read</small></div>
+    </header>
+    <div class="eyebrow"><span>Customer support software · October 6, 2026</span><span class="sample">Illustrative sample</span></div>
+    <h1>AI recommends you for retail.<br><em>Healthcare is the blind spot.</em></h1>
+    <p class="dek">Northstar earns recommendations in one-third of tested retail answers, but just one in twelve healthcare answers. The difference points to a focused area to investigate.</p>
+    <div class="scope"><span><b>60</b> tracked questions</span><span><b>240</b> analyzed answers</span><span><b>4</b> engines: ChatGPT, Claude, Gemini, Perplexity</span></div>
+    <div class="metrics">
+      <div class="metric"><p class="metric-label">Discovered without being named</p><div class="metric-value">37.5%</div><p class="metric-detail">Mentioned in 72 of 192<br>non-branded answers</p></div>
+      <div class="metric"><p class="metric-label">Explicitly recommended</p><div class="metric-value">25.0%</div><p class="metric-detail">Recommended in 48 of 192<br>non-branded answers</p></div>
+      <div class="metric"><p class="metric-label">Competitors fill the gap</p><div class="metric-value">71.7%</div><p class="metric-detail">A competitor recommended in 86<br>of 120 answers missing Northstar</p></div>
+    </div>
+    <p class="recognition"><strong>Recognition is stronger than discovery.</strong><span>When the question names Northstar, it appears in 42 of 48 answers (87.5%).</span></p>
+    <section aria-labelledby="segments-heading">
+      <div class="section-heading"><h2 id="segments-heading"><span class="section-number">01</span>Where you make the shortlist</h2><p class="section-note">Explicit recommendations · non-branded questions</p></div>
+      <table>
+        <caption>Illustrative recommendations by industry, with twelve questions and forty-eight answers per segment</caption>
+        <thead><tr><th scope="col">Buyer need</th><th scope="col">Northstar</th><th scope="col">Observation</th></tr></thead>
+        <tbody><tr><td><span class="segment">SaaS</span><span class="segment-note">12 tested questions</span></td><td><div class="bar-line"><span class="track" aria-hidden="true"><span class="fill" style="display:block;width:37.5%"></span></span><span class="bar-value">18/48 · 37.5%</span></div></td><td><span class="competitor">Highest coverage</span></td></tr><tr><td><span class="segment">Retail</span><span class="segment-note">12 tested questions</span></td><td><div class="bar-line"><span class="track" aria-hidden="true"><span class="fill" style="display:block;width:33.33333333333333%"></span></span><span class="bar-value">16/48 · 33.3%</span></div></td><td><span class="competitor">One in three answers</span></td></tr><tr><td><span class="segment">Professional services</span><span class="segment-note">12 tested questions</span></td><td><div class="bar-line"><span class="track" aria-hidden="true"><span class="fill" style="display:block;width:20.833333333333336%"></span></span><span class="bar-value">10/48 · 20.8%</span></div></td><td><span class="competitor">Less consistent inclusion</span></td></tr><tr><td><span class="segment">Healthcare</span><span class="segment-note">12 tested questions</span></td><td><div class="bar-line"><span class="track" aria-hidden="true"><span class="fill" style="display:block;width:8.333333333333332%"></span></span><span class="bar-value">4/48 · 8.3%</span></div></td><td><span class="competitor">Largest observed gap</span></td></tr></tbody>
+      </table>
+      <p class="table-foot">Each industry: 12 questions / 48 answers. Discovery metrics: 48 non-branded questions / 192 answers.</p>
+    </section>
+    <section aria-labelledby="evidence-heading">
+      <div class="section-heading"><h2 id="evidence-heading"><span class="section-number">02</span>One question behind the gap</h2><p class="section-note">Example evidence · fictional answer outcomes</p></div>
+      <div class="evidence">
+        <div><p class="evidence-label">Tracked buyer question</p><blockquote>“Which help desk platforms suit a healthcare team that needs SSO and audit logs?”</blockquote></div>
+        <div><p class="evidence-label">Observed outcome in this sample</p><p class="outcome"><strong>Northstar is absent from all four answers.</strong> In the fictional ChatGPT answer, ResolveWorks is recommended for access controls and auditability.</p><p class="engine-row">ChatGPT · Claude · Gemini · Perplexity</p></div>
+      </div>
+    </section>
+    <section class="next-step" aria-labelledby="next-heading">
+      <div><p class="label">Proposed next step</p><h2 id="next-heading">Investigate the healthcare gap.</h2><p>Check product fit, then inspect answer descriptions and cited sources for concrete inclusion gaps.</p></div>
+      <div class="invitation"><p class="label">Go deeper</p><strong>Request a comprehensive analysis →</strong><p>Explore the missing use cases, competitor positioning, and source evidence behind this snapshot.</p></div>
+    </section>
+    <p class="method">Illustrative data only; all brand names and outcomes are fictional. A real report would use one analyzed scan, with traceable prompt groups and answer evidence. Visibility measures presence in tested answers, not buyer demand, leads, or revenue.</p>
+    <footer><span>HappyFox AEO</span><span>1 / 1</span></footer>
+  </main>
+</body>
+</html>

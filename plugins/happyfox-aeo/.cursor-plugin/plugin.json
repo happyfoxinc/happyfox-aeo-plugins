@@ -1,0 +1,26 @@
+{
+  "name": "happyfox-aeo",
+  "displayName": "HappyFox AEO",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Understand your brand’s visibility in AI answers, compare competitors, and investigate answers and citations to identify practical next steps.",
+  "author": {
+    "name": "HappyFox",
+    "email": "support@happyfox.com"
+  },
+  "homepage": "https://www.happyfox.com/aeo/",
+  "repository": "https://github.com/happyfoxinc/happyfox-aeo-plugins/",
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "ai-visibility",
+    "competitor-analysis",
+    "prompt-tracking",
+    "citations",
+    "brand-visibility",
+    "aeo-reporting"
+  ],
+  "logo": "assets/icon.png",
+  "skills": "skills",
+  "mcpServers": ".mcp.json"
+}

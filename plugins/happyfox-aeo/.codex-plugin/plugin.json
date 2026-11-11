@@ -1,0 +1,50 @@
+{
+  "name": "happyfox-aeo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/happyfoxinc/happyfox-aeo-plugins/",
+  "description": "Understand your brand’s visibility in AI answers, compare competitors, and investigate answers and citations to identify practical next steps.",
+  "author": {
+    "name": "HappyFox",
+    "url": "https://happyfox.com"
+  },
+  "homepage": "https://www.happyfox.com/aeo/",
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "ai-visibility",
+    "competitor-analysis",
+    "prompt-tracking",
+    "citations",
+    "brand-visibility",
+    "aeo-reporting"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "HappyFox AEO",
+    "shortDescription": "How AI represents your brand",
+    "longDescription": "See where AI answer engines mention or recommend your brand, compare competitors, and explore visibility across the buyer journey.\n\nInspect recorded answers and citations, investigate visibility gaps, and develop practical next steps grounded in evidence. Create a one-page brief or comprehensive report from your tracked results.\n\nWork directly from your assistant to add or delete tracked prompts and manage competitors, with the appropriate permissions.",
+    "developerName": "HappyFox",
+    "category": "Data & Analytics",
+    "capabilities": [
+      "AI visibility analytics",
+      "Tracked prompt analysis",
+      "Competitor analysis",
+      "Prompt investigation",
+      "Citation analysis",
+      "AEO reports"
+    ],
+    "websiteURL": "https://www.happyfox.com/aeo/",
+    "privacyPolicyURL": "https://www.happyfox.com/privacy-policy/",
+    "termsOfServiceURL": "https://www.happyfox.com/terms-services/",
+    "supportURL": "https://support.happyfox.com",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Suggest new prompts to track for my brand.",
+      "How visible is my brand in AI answers?",
+      "Where are competitors ahead of my brand?"
+    ]
+  }
+}

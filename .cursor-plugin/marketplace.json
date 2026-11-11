@@ -1,0 +1,16 @@
+{
+  "name": "happyfox-aeo-plugin",
+  "owner": {
+    "name": "HappyFox"
+  },
+  "metadata": {
+    "description": "Official HappyFox AEO plugin for understanding brand visibility in AI answers."
+  },
+  "plugins": [
+    {
+      "name": "happyfox-aeo",
+      "source": "plugins/happyfox-aeo",
+      "description": "Analyze brand visibility in AI answers, compare competitors, investigate citations, and create evidence-backed reports."
+    }
+  ]
+}
